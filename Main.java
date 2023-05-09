@@ -8,15 +8,20 @@ public class Main {
         System.out.print("Enter Here :");
         int input = sc.nextInt();
 
-        int a = 1;
+        int a = 0;
         int sq = 0;
 
         while (input != sq) {
             a++;
             sq = a*a;
         } 
-        System.out.print("The no. squared is :");
-        System.out.println(a);
 
+        if (a == 2147483647) {
+            System.out.println("Does not exist");
+        }
+                else {
+                System.out.print("The no. squared is :");
+                System.out.println(a);
+            }
+        }
     }
-}
