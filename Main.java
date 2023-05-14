@@ -19,7 +19,7 @@ public class Main {
 
         while(input.length() > a) {
             array1[a] = input.charAt(a);
-            System.out.println(array1[a]);
+            //System.out.println(array1[a]);
             a++;
         }
 
@@ -27,7 +27,7 @@ public class Main {
 
         while(input.length() > a) {
             array2[a] = input.charAt(b-1);
-            System.out.println(array2[a]);
+            //System.out.println(array2[a]);
             //System.out.println("this is triggered");
             a++;
             b--;
@@ -38,7 +38,5 @@ public class Main {
         } else {
             System.out.println("They are not same");
         }
-
-
     }
 }
