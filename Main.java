@@ -1,5 +1,6 @@
 //package com.hello;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
@@ -22,15 +23,17 @@ public class Main {
             a++;
         }
 
-        while(input.length() != 0) {
-            array2[b-1] = input.charAt(b);
-            System.out.println(array2[b]);
-            System.out.println("this is triggered");
+        a = 0;
 
+        while(input.length() > a) {
+            array2[a] = input.charAt(b-1);
+            System.out.println(array2[a]);
+            //System.out.println("this is triggered");
+            a++;
             b--;
         }
 
-        if(array1 == array2) {
+        if(Arrays.equals(array1, array2)) {
             System.out.println("Both are same");
         } else {
             System.out.println("They are not same");
