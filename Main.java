@@ -9,18 +9,32 @@ public class Main {
         String input = sc.nextLine();
         //System.out.println(input);
         System.out.println(input.length());
-        String[] array1 = new String[99];
+        char[] array1 = new char[99];
+        char[] array2 = new char[99];
         int a = 0;
+        int b = input.length();
 
         //System.out.println(input.charAt(1));
 
-        // while(input.length() != a) {
-            
-        // }
+        while(input.length() > a) {
+            array1[a] = input.charAt(a);
+            System.out.println(array1[a]);
+            a++;
+        }
 
+        while(input.length() != 0) {
+            array2[b-1] = input.charAt(b);
+            System.out.println(array2[b]);
+            System.out.println("this is triggered");
 
+            b--;
+        }
 
-
+        if(array1 == array2) {
+            System.out.println("Both are same");
+        } else {
+            System.out.println("They are not same");
+        }
 
 
     }
