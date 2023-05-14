@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Enter Here :");
         String input = sc.nextLine();
         //System.out.println(input);
-        System.out.println(input.length());
+        //System.out.println(input.length());
         char[] array1 = new char[99];
         char[] array2 = new char[99];
         int a = 0;
